@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width",initial-scale='1'>
+    <title>Asus</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="headerpart">
+          <select onchange="colorchange(this)">
+              <option value="brown">Brown</option>
+              <option value="blue">blue</option>
+              <option value="green">green</option>
+           <select>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">GOODS</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+         <div class="search">
+               
+                   <input type="text" id="input" placeholder="search any drive here...">
+                   <button class="btn">Search</button><br><br><br><br>
+             <div class="sign">
+                 <a id="button">CREATE AN ACCOUNT</a>
+                 <a id="button1">SIGN UP</a>
+             </div>
+               
+           </div>
+    </div>
+            <script>
+            function colorchange(color){
+                document.getElementsByTagName("body")[0].style.background=color.value;
+            }
+            </script>
+</body>
+</html>
